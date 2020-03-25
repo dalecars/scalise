@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>jQuery - Scalize</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/scalize.css" />
+    <style>
+        body{
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .tab-pane{
+            padding: 25px 30px;
+            border: solid 1px #dfdfdf;
+            border-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="scalize">
+
+                <!-- Start Popover Template -->
+                <div id="content1" class="content right bottom">
+                    <div class="head">
+                        <a href="#" class="exit"><img src="img/close.png" alt="" /></a>
+                        <h6 class="title">Lorem Ipsum 1</h6>
+                    </div>
+                    <div class="body">
+                        <p>Lorem ipsum dolor sit amet, ne est populo dictas, et pri ferri ubique labitur.</p>
+                        <p>Mel ad euismod adipiscing moderatius eos an decore quodsi animal.</p>
+                    </div>
+                </div>
+                <!-- End Popover Template -->
+
+                <img src="img/jacket.png" alt="" class="target">
+
+                <!-- Start Item Point -->
+                <div class="item-point" data-top="130" data-left="227" data-popover="#content1">
+                    <div><a href="#" class="toggle"></a></div>
+                </div>
+            </div>   
+    </div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	<script type="text/javascript" src="js/scalize.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.scalize').scalize();
+        });        
+    </script>
+</body>
+</html>
